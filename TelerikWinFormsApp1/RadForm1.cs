@@ -614,6 +614,10 @@ namespace TelerikWinFormsApp1
                 }
             }
         }
+        private void RadForm1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 
     public class Project

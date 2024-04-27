@@ -37,9 +37,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.chkShowPassword = new System.Windows.Forms.CheckBox();
             this.btnRegister = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btClear = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelLogin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +50,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.label1.Location = new System.Drawing.Point(28, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 27);
+            this.label1.Size = new System.Drawing.Size(194, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Get Started";
             // 
@@ -59,7 +59,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(30, 125);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 17);
+            this.label2.Size = new System.Drawing.Size(92, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "UserName";
             // 
@@ -80,6 +80,7 @@
             this.tbpassword.Location = new System.Drawing.Point(33, 213);
             this.tbpassword.Multiline = true;
             this.tbpassword.Name = "tbpassword";
+            this.tbpassword.PasswordChar = '*';
             this.tbpassword.Size = new System.Drawing.Size(216, 26);
             this.tbpassword.TabIndex = 4;
             // 
@@ -88,7 +89,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(30, 193);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 17);
+            this.label3.Size = new System.Drawing.Size(84, 23);
             this.label3.TabIndex = 3;
             this.label3.Text = "Password";
             // 
@@ -99,6 +100,7 @@
             this.tbConfirmPassword.Location = new System.Drawing.Point(33, 281);
             this.tbConfirmPassword.Multiline = true;
             this.tbConfirmPassword.Name = "tbConfirmPassword";
+            this.tbConfirmPassword.PasswordChar = '*';
             this.tbConfirmPassword.Size = new System.Drawing.Size(216, 26);
             this.tbConfirmPassword.TabIndex = 6;
             // 
@@ -107,7 +109,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(30, 261);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 17);
+            this.label4.Size = new System.Drawing.Size(155, 23);
             this.label4.TabIndex = 5;
             this.label4.Text = "Confirm Password";
             // 
@@ -118,14 +120,16 @@
             this.chkShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkShowPassword.Location = new System.Drawing.Point(127, 313);
             this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(119, 21);
+            this.chkShowPassword.Size = new System.Drawing.Size(151, 27);
             this.chkShowPassword.TabIndex = 7;
             this.chkShowPassword.Text = "Show Password";
             this.chkShowPassword.UseVisualStyleBackColor = true;
+            this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged);
             // 
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegister.FlatAppearance.BorderSize = 0;
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.ForeColor = System.Drawing.Color.White;
@@ -137,46 +141,50 @@
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
-            // button1
+            // btClear
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.button1.Location = new System.Drawing.Point(33, 395);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 35);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "CLEAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btClear.BackColor = System.Drawing.Color.White;
+            this.btClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.btClear.Location = new System.Drawing.Point(33, 395);
+            this.btClear.Name = "btClear";
+            this.btClear.Size = new System.Drawing.Size(216, 35);
+            this.btClear.TabIndex = 9;
+            this.btClear.Text = "CLEAR";
+            this.btClear.UseVisualStyleBackColor = false;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(56, 454);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 17);
+            this.label5.Size = new System.Drawing.Size(221, 23);
             this.label5.TabIndex = 10;
             this.label5.Text = "Already Have An Account?";
             // 
-            // label6
+            // labelLogin
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.label6.Location = new System.Drawing.Point(84, 488);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 17);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Go Back To Login";
+            this.labelLogin.AutoSize = true;
+            this.labelLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.labelLogin.Location = new System.Drawing.Point(84, 488);
+            this.labelLogin.Name = "labelLogin";
+            this.labelLogin.Size = new System.Drawing.Size(148, 23);
+            this.labelLogin.TabIndex = 11;
+            this.labelLogin.Text = "Go Back To Login";
+            this.labelLogin.Click += new System.EventHandler(this.labelLogin_Click);
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(293, 574);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(300, 540);
+            this.Controls.Add(this.labelLogin);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btClear);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.chkShowPassword);
             this.Controls.Add(this.tbConfirmPassword);
@@ -194,7 +202,9 @@
             // 
             // 
             this.RootElement.ApplyShapeToControl = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Register_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -212,8 +222,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox chkShowPassword;
         private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btClear;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelLogin;
     }
 }

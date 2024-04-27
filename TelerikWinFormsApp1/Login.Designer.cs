@@ -30,8 +30,8 @@
         {
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.btClear = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.chkShowPassword = new System.Windows.Forms.CheckBox();
             this.tbpassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,47 +44,52 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.label6.Location = new System.Drawing.Point(80, 409);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 17);
+            this.label6.Size = new System.Drawing.Size(159, 23);
             this.label6.TabIndex = 23;
             this.label6.Text = "Create An Account";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(65, 392);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(158, 17);
+            this.label5.Size = new System.Drawing.Size(203, 23);
             this.label5.TabIndex = 22;
             this.label5.Text = "Don\'t Have An Account?";
             // 
-            // button1
+            // btClear
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.button1.Location = new System.Drawing.Point(42, 318);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 35);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "CLEAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btClear.BackColor = System.Drawing.Color.White;
+            this.btClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.btClear.Location = new System.Drawing.Point(42, 318);
+            this.btClear.Name = "btClear";
+            this.btClear.Size = new System.Drawing.Size(216, 35);
+            this.btClear.TabIndex = 21;
+            this.btClear.Text = "CLEAR";
+            this.btClear.UseVisualStyleBackColor = false;
+            this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
-            // btnRegister
+            // btnLogin
             // 
-            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
-            this.btnRegister.FlatAppearance.BorderSize = 0;
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(42, 263);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(216, 35);
-            this.btnRegister.TabIndex = 20;
-            this.btnRegister.Text = "LOGIN";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(42, 263);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(216, 35);
+            this.btnLogin.TabIndex = 20;
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // chkShowPassword
             // 
@@ -93,10 +98,11 @@
             this.chkShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkShowPassword.Location = new System.Drawing.Point(136, 222);
             this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(119, 21);
+            this.chkShowPassword.Size = new System.Drawing.Size(151, 27);
             this.chkShowPassword.TabIndex = 19;
             this.chkShowPassword.Text = "Show Password";
             this.chkShowPassword.UseVisualStyleBackColor = true;
+            this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged);
             // 
             // tbpassword
             // 
@@ -105,6 +111,7 @@
             this.tbpassword.Location = new System.Drawing.Point(39, 180);
             this.tbpassword.Multiline = true;
             this.tbpassword.Name = "tbpassword";
+            this.tbpassword.PasswordChar = '*';
             this.tbpassword.Size = new System.Drawing.Size(216, 26);
             this.tbpassword.TabIndex = 16;
             // 
@@ -113,7 +120,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(36, 160);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 17);
+            this.label3.Size = new System.Drawing.Size(84, 23);
             this.label3.TabIndex = 15;
             this.label3.Text = "Password";
             // 
@@ -132,7 +139,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(36, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 17);
+            this.label2.Size = new System.Drawing.Size(92, 23);
             this.label2.TabIndex = 13;
             this.label2.Text = "UserName";
             // 
@@ -143,20 +150,20 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.label1.Location = new System.Drawing.Point(34, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 27);
+            this.label1.Size = new System.Drawing.Size(194, 34);
             this.label1.TabIndex = 12;
             this.label1.Text = "Get Started";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(289, 489);
+            this.ClientSize = new System.Drawing.Size(308, 530);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btClear);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.chkShowPassword);
             this.Controls.Add(this.tbpassword);
             this.Controls.Add(this.label3);
@@ -173,6 +180,7 @@
             this.RootElement.ApplyShapeToControl = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -183,8 +191,8 @@
 
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btClear;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.CheckBox chkShowPassword;
         private System.Windows.Forms.TextBox tbpassword;
         private System.Windows.Forms.Label label3;

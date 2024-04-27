@@ -151,7 +151,7 @@ namespace TelerikWinFormsApp1
             this.radPageView1.Location = new System.Drawing.Point(0, 28);
             this.radPageView1.Name = "radPageView1";
             this.radPageView1.SelectedPage = this.ToDoList;
-            this.radPageView1.Size = new System.Drawing.Size(1332, 760);
+            this.radPageView1.Size = new System.Drawing.Size(1348, 820);
             this.radPageView1.TabIndex = 3;
             this.radPageView1.ThemeName = "ControlDefault";
             this.radPageView1.ViewMode = Telerik.WinControls.UI.PageViewMode.NavigationView;
@@ -420,7 +420,7 @@ namespace TelerikWinFormsApp1
             this.ToDoList.ItemSize = new System.Drawing.SizeF(14F, 14F);
             this.ToDoList.Location = new System.Drawing.Point(41, 30);
             this.ToDoList.Name = "ToDoList";
-            this.ToDoList.Size = new System.Drawing.Size(1290, 729);
+            this.ToDoList.Size = new System.Drawing.Size(1306, 789);
             this.ToDoList.Text = "ToDoList";
             // 
             // radTextBox2
@@ -429,7 +429,7 @@ namespace TelerikWinFormsApp1
             this.radTextBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.radTextBox2.Location = new System.Drawing.Point(879, 617);
             this.radTextBox2.Name = "radTextBox2";
-            this.radTextBox2.Size = new System.Drawing.Size(151, 20);
+            this.radTextBox2.Size = new System.Drawing.Size(151, 24);
             this.radTextBox2.TabIndex = 20;
             this.radTextBox2.TextChanged += new System.EventHandler(this.radTextBox2_TextChanged);
             // 
@@ -440,7 +440,7 @@ namespace TelerikWinFormsApp1
             this.button7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(879, 576);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(151, 35);
+            this.button7.Size = new System.Drawing.Size(189, 42);
             this.button7.TabIndex = 19;
             this.button7.Text = "Find Task By ID";
             this.button7.UseVisualStyleBackColor = true;
@@ -452,7 +452,7 @@ namespace TelerikWinFormsApp1
             this.radTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.radTextBox1.Location = new System.Drawing.Point(637, 617);
             this.radTextBox1.Name = "radTextBox1";
-            this.radTextBox1.Size = new System.Drawing.Size(183, 20);
+            this.radTextBox1.Size = new System.Drawing.Size(183, 24);
             this.radTextBox1.TabIndex = 18;
             this.radTextBox1.TextChanged += new System.EventHandler(this.radTextBox1_TextChanged);
             // 
@@ -462,7 +462,7 @@ namespace TelerikWinFormsApp1
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.Location = new System.Drawing.Point(252, 526);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(60, 34);
+            this.radioButton2.Size = new System.Drawing.Size(75, 41);
             this.radioButton2.TabIndex = 17;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "No";
@@ -474,7 +474,7 @@ namespace TelerikWinFormsApp1
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(167, 526);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(61, 34);
+            this.radioButton1.Size = new System.Drawing.Size(78, 41);
             this.radioButton1.TabIndex = 16;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Yes";
@@ -486,7 +486,7 @@ namespace TelerikWinFormsApp1
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(25, 535);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 21);
+            this.label5.Size = new System.Drawing.Size(114, 28);
             this.label5.TabIndex = 15;
             this.label5.Text = "Completed";
             // 
@@ -521,7 +521,7 @@ namespace TelerikWinFormsApp1
             this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(637, 576);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(183, 35);
+            this.button5.Size = new System.Drawing.Size(230, 42);
             this.button5.TabIndex = 12;
             this.button5.Text = "Find Task By Name";
             this.button5.UseVisualStyleBackColor = true;
@@ -534,7 +534,7 @@ namespace TelerikWinFormsApp1
             this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(350, 576);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(215, 35);
+            this.button4.Size = new System.Drawing.Size(271, 42);
             this.button4.TabIndex = 11;
             this.button4.Text = "Remove Task By Name";
             this.button4.UseVisualStyleBackColor = true;
@@ -547,7 +547,7 @@ namespace TelerikWinFormsApp1
             this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(762, 41);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 35);
+            this.button3.Size = new System.Drawing.Size(176, 42);
             this.button3.TabIndex = 10;
             this.button3.Text = "Load All Tasks";
             this.button3.UseVisualStyleBackColor = true;
@@ -560,7 +560,7 @@ namespace TelerikWinFormsApp1
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(578, 41);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 35);
+            this.button2.Size = new System.Drawing.Size(174, 42);
             this.button2.TabIndex = 9;
             this.button2.Text = "Save All Tasks";
             this.button2.UseVisualStyleBackColor = true;
@@ -573,7 +573,7 @@ namespace TelerikWinFormsApp1
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(167, 576);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 35);
+            this.button1.Size = new System.Drawing.Size(122, 42);
             this.button1.TabIndex = 8;
             this.button1.Text = "Add Task";
             this.button1.UseVisualStyleBackColor = true;
@@ -584,7 +584,7 @@ namespace TelerikWinFormsApp1
             this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(167, 227);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 25);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 29);
             this.dateTimePicker1.TabIndex = 7;
             // 
             // cmbPriority
@@ -597,7 +597,7 @@ namespace TelerikWinFormsApp1
             "Low"});
             this.cmbPriority.Location = new System.Drawing.Point(167, 429);
             this.cmbPriority.Name = "cmbPriority";
-            this.cmbPriority.Size = new System.Drawing.Size(121, 29);
+            this.cmbPriority.Size = new System.Drawing.Size(121, 36);
             this.cmbPriority.TabIndex = 6;
             // 
             // tbTaskDescription
@@ -613,7 +613,7 @@ namespace TelerikWinFormsApp1
             // 
             this.tbTaskName.Location = new System.Drawing.Point(167, 30);
             this.tbTaskName.Name = "tbTaskName";
-            this.tbTaskName.Size = new System.Drawing.Size(100, 20);
+            this.tbTaskName.Size = new System.Drawing.Size(100, 22);
             this.tbTaskName.TabIndex = 4;
             // 
             // label4
@@ -622,7 +622,7 @@ namespace TelerikWinFormsApp1
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(25, 429);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 21);
+            this.label4.Size = new System.Drawing.Size(83, 28);
             this.label4.TabIndex = 3;
             this.label4.Text = "Priority";
             // 
@@ -632,7 +632,7 @@ namespace TelerikWinFormsApp1
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(25, 226);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 21);
+            this.label3.Size = new System.Drawing.Size(101, 28);
             this.label3.TabIndex = 2;
             this.label3.Text = "Due Date";
             // 
@@ -642,7 +642,7 @@ namespace TelerikWinFormsApp1
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(25, 127);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 21);
+            this.label2.Size = new System.Drawing.Size(168, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "Task Description";
             // 
@@ -652,7 +652,7 @@ namespace TelerikWinFormsApp1
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(25, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 21);
+            this.label1.Size = new System.Drawing.Size(115, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Task Name";
             // 
@@ -854,7 +854,7 @@ namespace TelerikWinFormsApp1
             this.TitleBar1.ForeColor = System.Drawing.Color.White;
             this.TitleBar1.Location = new System.Drawing.Point(0, 0);
             this.TitleBar1.Name = "TitleBar1";
-            this.TitleBar1.Size = new System.Drawing.Size(1332, 28);
+            this.TitleBar1.Size = new System.Drawing.Size(1348, 28);
             this.TitleBar1.TabIndex = 0;
             this.TitleBar1.TabStop = false;
             this.TitleBar1.Text = "radRibbonBar1";
@@ -880,10 +880,10 @@ namespace TelerikWinFormsApp1
             // 
             // RadForm1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(254)))));
-            this.ClientSize = new System.Drawing.Size(1332, 788);
+            this.ClientSize = new System.Drawing.Size(1348, 848);
             this.Controls.Add(this.radPageView1);
             this.Controls.Add(this.TitleBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -893,6 +893,7 @@ namespace TelerikWinFormsApp1
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.Text = "radRibbonBar1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RadForm1_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).EndInit();
             this.radPageView1.ResumeLayout(false);
             this.ProjectsPage.ResumeLayout(false);
